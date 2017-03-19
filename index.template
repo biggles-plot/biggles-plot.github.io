@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>biggles | simple, elegant python plotting</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- fonts and style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="highlight.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Nav bar! -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" role="navigation">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target=".navbar-main-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">biggles</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="page-scroll" href="#quickstart">quick start</a></li>
+            <li><a class="page-scroll" href="#install">install</a></li>
+            <li><a class="page-scroll" href="#gallery">gallery</a></li>
+            <li><a class="page-scroll" href="#docs">documentation</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <header id="biggles">
+      <div class='container content-section text-left'>
+        <h1>biggles <small>simple, elegant python plotting</small></h1>
+        <div class="text-center">
+          <a href="#quickstart" class="nava">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          </a>
+        </div>
+        </br>
+    </div>
+    </header>
+
+    <section id="quickstart" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 padded">
+                <h1 class="text-center">quick start</h1>
+                <p>Biggles is a simple, object-oriented plotting library. You declare a <a href="https://github.com/biggles-plot/biggles/wiki/Containers">container</a> and then add <a href="https://github.com/biggles-plot/biggles/wiki/Components">components</a> in order to make a plot.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-sm-6 col-sm-offset-1 col-lg-4 col-lg-offset-4'>
+                </br>
+                {{ quickstart }}
+                </br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 padded">
+                <p>See more in the <a href="https://github.com/biggles-plot/biggles/tree/master/examples">examples</a> in the source code and the <a href="#gallery" class='nava'>gallery</a> below.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 padded">
+                <h1 class='text-center'>install</h1>
+                <p>Install biggles using
+                    <a href="https://brew.sh/">homebrew</a> / <a href="https://www.macports.org/">macports</a> / <a href="https://wiki.debian.org/apt-get">apt-get</a> and
+                    <a href="https://pip.pypa.io/en/stable/">pip</a>. Biggles requires
+                    <a href="http://www.numpy.org/">numpy</a> and GNU
+                    <a href="https://www.gnu.org/software/plotutils/">plotutils</a>.
+                </p>
+
+                <h3>Mac OS X</h3>
+                <code>brew install plotutils --with-x11  # homebrew</code></br>
+                <code>sudo port install plotutils +x11  # macports</code></br>
+                <code>pip install biggles</code></br>
+                </br>
+
+                <h3>Debian/Ubuntu</h3>
+                <code>sudo apt-get libplot-dev plotutils</code></br>
+                <code>pip install biggles</code></br>
+                </br>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container content-section text-center">
+        <h1>gallery</h1>
+        <br>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                {{ example_indicators }}
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                {{ example_code }}
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="docs" class="container content-section text-left">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 padded">
+                <h1 class="text-center">documentation</h1>
+                <p>Read the <a href="http://biggles.readthedocs.io/en/latest/">documentation</a> for a quick
+                introduction to biggles. If you need more help or encounter a bug, please make an issue on the
+                <a href="https://github.com/biggles-plot/biggles/issues/new">issues page</a>!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class='container text-center'>
+        <p>
+          <a href="">home</a> |
+          <a href="https://github.com/biggles-plot/biggles">biggles on github</a> |
+          <a href="http://nolta.net/">contact</a>
+        </p>
+        <br>
+        <p class="photocredit">
+          <a href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+          </a>
+          <br>
+          <a href="http://biggles-plot.github.io/biggles">biggles-plot.github.io/biggles</a> is licensed under the <br>
+          <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </p>
+        <p class="photocredit">Photo: <em>
+            <a href="http://sci.esa.int/planck/46707-planck-images-a-galactic-web-of-cold-dust/">Planck imagea a galactic web of cold dust.</em></a> ESA and the HFI Consortium, IRAS, 2010.
+        </p>
+        <br>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $('body').scrollspy({ target: '.navbar-fixed-top', offset: 60});
+
+        $('.carousel').carousel({
+          interval: false
+        })
+
+        /*! http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap */
+        var offset = 60;
+
+        $('.navbar li a').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+        });
+
+        $('#quickstart a.nava').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+        });
+
+        $('#biggles a.nava').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -offset);
+        });
+
+        /*!
+         * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+         * Code licensed under the Apache License v2.0.
+         * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+         */
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+
+    </script>
+  </body>
+</html>
