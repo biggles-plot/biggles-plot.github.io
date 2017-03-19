@@ -5,7 +5,8 @@ python:
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq libplot-dev plotutils
-install: python setup.py install
+
+install: 'git clone https://github.com/biggles-plot/biggles && cd biggles && python setup.py install && cd .. && rm -rf biggles'
 
 script: python render_website.py
 
