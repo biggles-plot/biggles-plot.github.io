@@ -18,4 +18,4 @@ deploy:
   target_branch: master
   github_token: $GITHUB_TOKEN
   on:
-    branch: master
+    branch: website
