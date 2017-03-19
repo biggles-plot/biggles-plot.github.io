@@ -5,9 +5,9 @@ python:
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq libplot-dev plotutils
-- pip install biggles pygments jinja2
 
-install: python render_website.py
+install: pip install biggles pygments jinja2
+script: python render_website.py
 
 notifications:
   email: false
