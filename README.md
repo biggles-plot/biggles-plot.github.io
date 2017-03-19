@@ -1,4 +1,6 @@
 # biggles-plot.github.io
+[![Build Status](https://travis-ci.org/biggles-plot/biggles-plot.github.io.svg?branch=master)](https://travis-ci.org/biggles-plot/biggles-plot.github.io)
+
 This repository contains the website for biggles.
 
 To edit the website do the following:
