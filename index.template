@@ -69,7 +69,10 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 padded">
                 <h1 class="text-center">quick start</h1>
-                <p>Biggles is a simple, object-oriented plotting library. You declare a <a href="https://github.com/biggles-plot/biggles/wiki/Containers">container</a> and then add <a href="https://github.com/biggles-plot/biggles/wiki/Components">components</a> in order to make a plot.</p>
+                <p>Biggles is a simple, object-oriented plotting library. You declare a 
+                <a href="http://biggles.readthedocs.io/en/latest/guide/containers/">container</a> and 
+                then add <a href="http://biggles.readthedocs.io/en/latest/guide/components/">components</a> 
+                in order to make a plot.</p>
             </div>
         </div>
         <div class="row">
