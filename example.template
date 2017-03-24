@@ -1,10 +1,10 @@
 <div class="item {{ active }}">
     <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 text-left">
-        {{ code }}
-        </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-lg-offset-1">
         {{ image }}
+        </div>
+        <div class="col-lg-5 text-left">
+        {{ code }}
         </div>
     </div>
 </div>
